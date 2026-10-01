@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.page-section {
+    width: 100%;
+    max-width: 480px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* --- COVER CARD --- */
+.cover-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.badge {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.cover-card h1 {
+    margin: 20px 0 10px;
+    color: #1a202c;
+    font-size: 24px;
+}
+
+.cover-card p {
+    color: #4a5568;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* --- FORM CARD --- */
+.form-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.btn-back {
+    background: transparent;
+    border: none;
+    color: #007bff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.form-card h2 {
+    color: #1a202c;
+    font-size: 20px;
+}
+
+.subtitle {
+    color: #718096;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px 12px;
+    border: 2px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+/* Validasi Visual Border */
+.form-group input.valid,
+.form-group select.valid {
+    border-color: #28a745 !important;
+}
+
+.form-group input.invalid,
+.form-group select.invalid {
+    border-color: #dc3545 !important;
+}
+
+.error-text {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 4px;
+    min-height: 16px;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Alert Styling */
+.alert {
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
